@@ -1,35 +1,35 @@
 //complete this code
 class Rectangle {
 	constructor(width,height){
-		this.width=width;
-		this.height=height;
+		this._width=width;
+		this._height=height;
 		
 	}
 	get width(){
-		return this.width
+		return this._width
 	}
 	set width(val){
-		return this.width=val
+		return this._width=val
 	}
 
 	get height(){
-		return this.height
+		return this._height
 	}
 	set height(val){
-		return this.height=val
+		return this._height=val
 	}
 	getArea(){
-		return (this.width)*(this.height)
+		return (this._width)*(this._height)
 	}
 }
 
 class Square extends Rectangle {
 	constructor(width,height,side){
-		super(width,height);
-		this.side=side
+		super(side,side);
+		
 	}
 	getPerimeter(){
-		return 4*(this.side)
+		return 4*(this._width)
 	}
 	
 	
