@@ -8,9 +8,15 @@ class Rectangle {
 	get width(){
 		return this.width
 	}
+	set width(val){
+		return this.width=val
+	}
 
 	get height(){
 		return this.height
+	}
+	set height(val){
+		return this.height=val
 	}
 	getArea(){
 		return (this.width)*(this.height)
